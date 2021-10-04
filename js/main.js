@@ -139,3 +139,19 @@ jQuery(document).ready(function( $ ) {
 // custom code
 
 });
+
+
+
+<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+<script>
+  window.OneSignal = window.OneSignal || [];
+  OneSignal.push(function() {
+    OneSignal.init({
+      appId: "1a96f55f-7040-49e9-8cf5-ff845dffda04",
+      safari_web_id: "web.onesignal.auto.0534d2b4-18a9-4e11-8788-4e680cd265b6",
+      notifyButton: {
+        enable: true,
+      },
+    });
+  });
+</script>
