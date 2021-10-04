@@ -474,18 +474,28 @@ owner is: Mohammad Taseen Khan
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
     
-<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
-<script>
-  window.OneSignal = window.OneSignal || [];
-  OneSignal.push(function() {
-    OneSignal.init({
-      appId: "1a96f55f-7040-49e9-8cf5-ff845dffda04",
-      safari_web_id: "web.onesignal.auto.0534d2b4-18a9-4e11-8788-4e680cd265b6",
-      notifyButton: {
-        enable: true,
-      },
-    });
-  });
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyAE942idbZ3X3HgvcrWsvfA1aFEHtrRJB4",
+    authDomain: "my-home-work-b789c.firebaseapp.com",
+    projectId: "my-home-work-b789c",
+    storageBucket: "my-home-work-b789c.appspot.com",
+    messagingSenderId: "237125012783",
+    appId: "1:237125012783:web:36814c06ae08be9d6fe5da",
+    measurementId: "G-HHYY1Z7DMJ"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
 </script>
     
     
